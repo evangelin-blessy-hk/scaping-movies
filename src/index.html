@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../dist/output.css" />
+        <title>Netflix</title>
+    </head>
+    <body>
+        <div class="navbar bg-black text-white flex justify-around">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-4xl font-bold text-red-500">Netflix</a>
+            </div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal px-1">
+                    <input type="text" placeholder="Search a movie" class="input input-bordered w-full max-w-5xl" />
+                </ul>
+            </div>
+        </div>
+
+        <div id="events-container-ui" class="min-h-screen bg-black flex flex-wrap justify-center gap-8">
+            <span class="loading loading-ball loading-lg text-info"></span>
+            <span class="loading loading-ball loading-lg text-warning"></span>
+            <span class="loading loading-ball loading-lg text-info"></span>
+        </div>
+
+    <script defer src="script.js"></script>
+    </body>
+</html>
